@@ -5,11 +5,9 @@ public class Node {
     public Node left;
     public Node right;
     public String value;
-    public boolean visted = false;
 
-    public Node(Node left, Node right, String value){
-        this.left = left;
-        this.right = right;
+    public Node(String value){
         this.value = value;
+        this.left = this.right = null;
     }
 }
